@@ -11,13 +11,8 @@ class Task extends Model
      *
      * @var array
      */
-    protected $fillable = ['name'];
+    protected $table = 'tasks';
+    protected $primaryKey = 'id';
+    public $timestamps = true;
 
-    /**
-     * Get the user that owns the task.
-     */
-	 public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
 }
