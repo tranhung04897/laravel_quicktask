@@ -12,7 +12,7 @@
                         <div class="form-group row">
                            {!! Form::label('email', trans('auth.lb-email'), ['class' => 'col-md-4 col-form-label text-md-right']) !!}
                             <div class="col-md-6">
-                                {!! Form::email('email', old('email'), ['class' => "form-control "]) !!}
+                                {!! Form::email('email', old('email'), ['class' => "form-control ",'required']) !!}
 
                                 @include('common.errors')
                             </div>
